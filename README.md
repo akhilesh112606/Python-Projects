@@ -18,6 +18,10 @@
      - If the guess is too low, prompt the player to guess higher.
 4. If the player uses all attempts without guessing correctly, print a failure message.
 
+   ![work2](https://github.com/user-attachments/assets/84061651-f60c-4041-9191-a2d1aff8a9f6)
+   ![work1](https://github.com/user-attachments/assets/eca7bdfa-d3ab-42e9-88a3-e09449b48cad)
+
+
 ## Project - 2: Black Jack Game
 
 **Description**: This is a simplified version of the Black Jack card game where the player competes against the computer to get the highest hand total without exceeding 21.
@@ -49,5 +53,9 @@
      - If the computer's hand total exceeds the player's hand total without busting, the computer wins.
 7. Display the computer's final hand and declare the winner.
 8. Thank the player for playing.
+   
+   
+   ![image](https://github.com/user-attachments/assets/7edd7b9c-e487-430e-af7a-b5179aa6bcdc)
+
 
 **More projects will be uploaded soon!**
