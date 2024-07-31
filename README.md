@@ -17,9 +17,9 @@
      - If the guess is too high, prompt the player to guess lower.
      - If the guess is too low, prompt the player to guess higher.
 4. If the player uses all attempts without guessing correctly, print a failure message.
-
-   ![work2](https://github.com/user-attachments/assets/84061651-f60c-4041-9191-a2d1aff8a9f6)
+   
    ![work1](https://github.com/user-attachments/assets/eca7bdfa-d3ab-42e9-88a3-e09449b48cad)
+   ![work2](https://github.com/user-attachments/assets/84061651-f60c-4041-9191-a2d1aff8a9f6)
 
 
 ## Project - 2: Black Jack Game
