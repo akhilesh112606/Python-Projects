@@ -57,5 +57,25 @@
    
    ![image](https://github.com/user-attachments/assets/7edd7b9c-e487-430e-af7a-b5179aa6bcdc)
 
+## Project - 3: Higher & Lower Game
+
+**Description**: The "Higher & Lower Game" challenges players to guess which of two randomly selected entities has more followers. The game continues until the player guesses incorrectly, and their score reflects the number of consecutive correct guesses.
+
+**Algorithm**:
+1. Initialize the game by setting the player's score to 0 and selecting a random choice for "A" from a predefined list of data.
+2. Loop until the player makes an incorrect guess:
+   - Display the current score and details of the choice "A" (name, description, and country).
+   - Randomly select a new choice for "B" from the data list.
+   - Display the details of choice "B" along with a graphic separator.
+   - Compare the follower counts of choice "A" and choice "B".
+   - Determine which choice has more followers:
+     - If choice "A" has more or equal followers, set the correct answer to "A".
+     - Otherwise, set the correct answer to "B".
+   - Prompt the player to guess which choice has more followers by typing "A" or "B".
+   - If the player's guess is correct:
+     - Increment the player's score.
+     - Replace choice "A" with choice "B" for the next round.
+     - Clear the screen to prepare for the next round.
+   - If the player's guess is incorrect, end the game and display the final score.
 
 **More projects will be uploaded soon!**
