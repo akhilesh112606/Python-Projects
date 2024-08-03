@@ -83,6 +83,45 @@
 ![pic3](https://github.com/user-attachments/assets/74aad3d8-d08b-4cae-b76c-aa867e372898)
 ![pic4](https://github.com/user-attachments/assets/8b9f4a63-8c99-47ca-850d-35ff4906cb8c)
 
+
+## Project - 4: COFFEE MACHINE LOGIC
+
+**Description**: The "Coffee Machine Logic" project simulates a basic coffee vending machine. Users can choose from different coffee options, pay using coins, and receive their selected beverage if sufficient resources and money are available.
+
+**Algorithm**:
+1. **Define the Menu and Resources**:
+   - The `MENU` dictionary contains the recipes for each coffee type (`espresso`, `latte`, `cappuccino`) with their respective ingredients and costs.
+   - The `resources` dictionary keeps track of the current available ingredients and money in the machine.
+
+2. **Start the Machine Loop**:
+   - Prompt the user to select a beverage (`espresso`, `latte`, `cappuccino`) or type 'report' to see the current resources.
+   - If the user types 'no', exit the loop and end the program.
+   - If the user selects a valid coffee option:
+     - Check if the machine has enough resources to make the selected coffee.
+     - If not, inform the user and restart the loop.
+   
+3. **Handle Coin Insertion**:
+   - Prompt the user to insert coins: quarters, dimes, nickels, and pennies.
+   - Calculate the total amount of money inserted by the user.
+
+4. **Check Payment**:
+   - If the inserted amount is less than the coffee cost, notify the user of insufficient funds and return the money.
+   - If the inserted amount is sufficient:
+     - Calculate and return any change to the user.
+     - Deduct the ingredients used to make the coffee from the machine's resources.
+     - Add the payment to the machine's money resources.
+     - Serve the coffee to the user.
+
+5. **Invalid Option Handling**:
+   - If the user selects an invalid option, notify them and prompt them to choose again.
+
+6. **Exit the Program**:
+   - Thank the user for using the coffee machine when they choose to exit.
+  
+![result1](https://github.com/user-attachments/assets/cb258be4-a7a3-4155-8eaa-0a69e8dfb2a3)
+
+
 **More projects will be uploaded soon!**
+
 
 
