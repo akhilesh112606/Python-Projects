@@ -79,3 +79,8 @@
    - If the player's guess is incorrect, end the game and display the final score.
 
 **More projects will be uploaded soon!**
+![pic1](https://github.com/user-attachments/assets/5ff94c85-5062-4228-b594-5f3a8c777548)
+![pic4](https://github.com/user-attachments/assets/8b9f4a63-8c99-47ca-850d-35ff4906cb8c)
+![pic3](https://github.com/user-attachments/assets/74aad3d8-d08b-4cae-b76c-aa867e372898)
+![pic2](https://github.com/user-attachments/assets/3e366d71-4a14-4713-be1d-e8b7c486e091)
+
