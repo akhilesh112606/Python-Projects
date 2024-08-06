@@ -120,8 +120,44 @@
   
 ![result1](https://github.com/user-attachments/assets/cb258be4-a7a3-4155-8eaa-0a69e8dfb2a3)
 
+## Project - 5: True or False Game using OOP
+
+**Description**: This project is a "True or False" quiz game implemented using Object-Oriented Programming (OOP). It allows players to answer a series of true or false questions and provides feedback on their performance.
+
+**Algorithm**:
+1. **Question Data**: 
+   - Questions and their correct answers are stored in a data source (e.g., a list of dictionaries).
+
+2. **Question Model**:
+   - Define a `Question` class to represent each question with its text and answer.
+
+3. **Quiz Brain**:
+   - Define a `QuizBrain` class to manage the quiz flow:
+     - Initialize with a list of `Question` objects (`question_bank`).
+     - Track the current question index and the player's score.
+
+4. **Setup**:
+   - Create a list called `question_bank`.
+   - Loop through the `question_data` to create `Question` objects for each question and add them to `question_bank`.
+
+5. **Quiz Flow**:
+   - Create a `QuizBrain` instance with the `question_bank`.
+   - Loop through the questions using the `still_has_questions()` method:
+     - Display the next question and prompt the player for an answer.
+     - Check if the player's answer is correct.
+     - Update the score accordingly.
+
+6. **Completion**:
+   - After all questions have been answered, display the player's final score.
+  
+
+![pic1](https://github.com/user-attachments/assets/c2a4e55a-5fd5-4671-bfb7-6e811f542359)
+
+![pic2](https://github.com/user-attachments/assets/641df79b-d548-482d-acf5-32ae60fca2dd)
+
 
 **More projects will be uploaded soon!**
+
 
 
 
