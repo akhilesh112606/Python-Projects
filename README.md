@@ -155,6 +155,63 @@
 
 ![pic2](https://github.com/user-attachments/assets/641df79b-d548-482d-acf5-32ae60fca2dd)
 
+## PROJECT - 6: TURTLE RACING GAME
+
+**Description**
+This is a simple turtle race game built using Python's `turtle` module. The game allows users to place bets on a turtle's color and then watch a race to see if their chosen turtle wins!
+
+**How to Play**
+1. When the game starts, you will be prompted to place your bet by selecting a turtle's color from the available options.
+2. After placing your bet, the race will begin following a brief countdown.
+3. Watch the turtles race to the finish line!
+4. If your chosen turtle wins, you will be notified with a "YOU WON!" message. If not, you'll see a "YOU LOST!" message.
+
+**Algorithm**
+
+1. **Initialize Variables:**
+   - Create a list `color_list` containing the colors for the turtles.
+   - Initialize an empty list `turtle_list` to store the turtle objects.
+   - Create variables `winner_turtle` and `is_race_on` to track the race status.
+
+2. **Setup Screen:**
+   - Set up the turtle screen with a size of 500x400 pixels.
+   - Prompt the user to place a bet on a turtle color from the `color_list`.
+
+3. **Create Turtles:**
+   - Loop through the `color_list` and create six turtles with the respective colors.
+   - Append each turtle to the `turtle_list`.
+
+4. **Position Turtles:**
+   - Set the initial vertical position of the turtles.
+   - Loop through the `turtle_list` and position each turtle at the starting line with appropriate spacing.
+
+5. **Countdown Before Race:**
+   - Create a countdown sequence (3, 2, 1, GO!) with a delay between each number.
+   - Clear the turtle used for displaying the countdown.
+
+6. **Start the Race:**
+   - If the user's chosen color is in the `color_list`, start the race.
+   - While the race is on:
+     - For each turtle, randomly generate a forward distance.
+     - Move the turtle forward by the generated distance.
+     - Check if any turtle has crossed the finish line (x-coordinate > 230).
+     - If a turtle wins, stop the race and store the winning turtle's color.
+
+7. **Announce the Result:**
+   - Create a temporary turtle to display the race result.
+   - If the user's chosen turtle wins, display a "YOU WON!" message in green.
+   - If the user's chosen turtle loses, display a "YOU LOST!" message in red.
+
+8. **Handle Invalid Input:**
+   - If the user inputs a color not in `color_list`, display an error message and exit the program.
+
+9. **Exit Program:**
+   - Keep the screen open until the user clicks on it to exit.
+
+![pic1](https://github.com/user-attachments/assets/1df75185-6ba0-4281-9c2f-21a61b0654a7)
+![pic2](https://github.com/user-attachments/assets/4ff8e0ea-63ce-459a-99af-c9ce45e44669)
+![pic3](https://github.com/user-attachments/assets/fff7c05b-1b60-4061-91a3-386f8f500752)
+
 
 **More projects will be uploaded soon!**
 
