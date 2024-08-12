@@ -212,8 +212,41 @@ This is a simple turtle race game built using Python's `turtle` module. The game
 ![pic2](https://github.com/user-attachments/assets/4ff8e0ea-63ce-459a-99af-c9ce45e44669)
 ![pic3](https://github.com/user-attachments/assets/fff7c05b-1b60-4061-91a3-386f8f500752)
 
+## Project - 6: Snake Game
+
+**Description**: This project is a classic "Snake Game" where the player controls a snake to eat food, grow in size, and avoid colliding with the walls or itself.
+
+**Algorithm**:
+1. **Initialize the Game**:
+   - Set up the screen with a black background and a title.
+   - Create a `Snake` class to initialize a snake with a list of turtle segments.
+   - Create a `Food` class to manage the food item on the screen.
+   - Create a `Score` class to track and display the player's score.
+
+2. **Game Controls**:
+   - Use the arrow keys to change the snake's direction (`up`, `down`, `left`, `right`).
+
+3. **Game Loop**:
+   - Continuously update the screen and move the snake.
+   - Check for collision with food:
+     - If the snake's head is close to the food, reposition the food, increase the score, and grow the snake.
+   - Check for collision with walls:
+     - If the snake's head collides with the wall, end the game and display "Game Over".
+   - Check for collision with itself:
+     - If the snake's head collides with any part of its body, end the game.
+
+4. **End Game**:
+   - Display "Game Over" and the final score when the game ends.
+   - Close the game window on click.
+  
+
+
+https://github.com/user-attachments/assets/e6192aee-8eea-49c9-8067-cb44c954e18a
+
+
 
 **More projects will be uploaded soon!**
+
 
 
 
