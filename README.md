@@ -243,6 +243,67 @@ This is a simple turtle race game built using Python's `turtle` module. The game
 
 https://github.com/user-attachments/assets/e6192aee-8eea-49c9-8067-cb44c954e18a
 
+## PROJECT 7 - Snake Game Part 2
+
+This repository contains a simple implementation of the classic Snake Game using Python's Turtle graphics module. The game features an evolving snake that moves around the screen, consuming food, and growing in size. The game ends when the snake collides with itself.
+
+
+
+## Algorithm
+
+### Snake Initialization
+1. *Snake Body Creation*: 
+    - The snake starts with three segments, initialized as square-shaped turtle objects.
+    - The head of the snake is represented with a turtle shape for distinction.
+
+### Game Loop
+1. *Movement*:
+    - Each segment of the snake follows the segment in front of it, with the head moving in the direction indicated by the player.
+    - The speed of the snake increases as the score reaches specific thresholds, making the game progressively challenging.
+
+2. *Food Detection*:
+    - The snake checks if its head is within a certain distance of the food. If so:
+        - The food is repositioned randomly on the screen.
+        - The score is incremented.
+        - A new segment is added to the snake's body.
+
+3. *Screen Wrapping*:
+    - If the snake's head moves beyond the screen boundary, it reappears on the opposite side, maintaining the game's continuity.
+
+4. *Collision Detection*:
+    - *Wall Collision*: Instead of stopping the game, the snake reappears on the opposite side of the screen when it hits the wall.
+    - *Self-Collision*: The game checks if the snake's head collides with any other part of its body. If a collision is detected, the game ends.
+
+### Game End
+- When the game detects a collision with the snake's body, it triggers the game-over sequence, displaying a "GAME OVER" message and ending the loop.
+
+## Code Analysis
+
+### Snake Class
+- *Attributes*: 
+    - turtles_list: A list that stores all segments of the snake.
+- *Methods*:
+    - __init__: Initializes the snake with three segments.
+    - move: Controls the movement of the snake, adjusting speed based on the score.
+    - up, down, left, right: Handle directional movement based on key presses.
+    - increase_snake_body: Adds a new segment to the snake's body.
+
+### Food Class
+- *Attributes*:
+    - dot_turtle: A turtle object representing the food.
+- *Methods*:
+    - __init__: Initializes the food and places it randomly on the screen.
+    - new_position_food: Randomly places the food in a new position.
+
+### Score Class
+- *Attributes*:
+    - score_turtle: A turtle object used for displaying the score.
+    - score: Tracks the player's score.
+- *Methods*:
+    - __init__: Initializes the score display.
+    - increase_score: Updates the score and refreshes the display.
+    - game_over: Displays a "GAME OVER" message when the game ends.
+
 
 
 **More projects will be uploaded soon!**
