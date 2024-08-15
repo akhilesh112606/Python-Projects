@@ -304,6 +304,39 @@ This repository contains a simple implementation of the classic Snake Game using
     - increase_score: Updates the score and refreshes the display.
     - game_over: Displays a "GAME OVER" message when the game ends.
 
+## Project 8: Pong Game
+
+## Algorithm Overview
+
+1. **Initialize the Game**:
+   - Setup the screen with the correct size and background.
+   - Initialize two paddles (`left_paddle`, `right_paddle`), a ball, and a scoreboard.
+
+2. **Paddle Movement**:
+   - Use the arrow keys to move the right paddle up and down.
+   - Use 'W' and 'S' keys to move the left paddle up and down.
+
+3. **Ball Movement**:
+   - The ball moves continuously, bouncing off the top and bottom edges of the screen.
+   - If the ball hits a paddle, it bounces back in the opposite direction (horizontal reflection).
+
+4. **Ball-Paddle Collision**:
+   - When the ball comes within a certain distance of a paddle and aligns with its position, it bounces back.
+
+5. **Scoring System**:
+   - If the ball goes past the right edge of the screen, Player 1 scores, and the ball is reset to the center.
+   - If the ball goes past the left edge, Player 2 scores, and the ball is reset.
+
+6. **Winning Condition**:
+   - The game checks if either player has reached the winning score.
+   - The game ends when Player 1 scores 2 points or Player 2 scores 5 points. A winning message is displayed on the screen.
+
+
+
+
+https://github.com/user-attachments/assets/afeae3a6-61e2-4875-b431-1d4f935602b1
+
+
 
 
 **More projects will be uploaded soon!**
