@@ -336,6 +336,33 @@ This repository contains a simple implementation of the classic Snake Game using
 
 https://github.com/user-attachments/assets/afeae3a6-61e2-4875-b431-1d4f935602b1
 
+## Project 9: Turtle Cross Game
+
+## Algorithm Overview
+
+1. **Initialize the Game**:
+   - Set up the screen size and tracer for performance optimization.
+   - Initialize the player (`main_turtle`), car manager (`car_manager_turtle`), and scoreboard (`score_turtle`).
+
+2. **Player Movement**:
+   - Bind the **Up** and **Down** arrow keys to move the player turtle forward and backward.
+
+3. **Car Creation and Movement**:
+   - Cars are randomly generated from the right side of the screen.
+   - The cars move from right to left, and the speed increases with each level.
+
+4. **Collision Detection**:
+   - If the player's turtle is within a certain distance of any car, the game ends.
+
+5. **Level Progression**:
+   - Once the turtle reaches the finish line, the level increases, the turtle moves back to the start, and the cars move faster.
+
+6. **Game Over**:
+   - Display a "GAME OVER!" message if a collision occurs.
+
+
+
+https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 
 
 
