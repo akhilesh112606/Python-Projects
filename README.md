@@ -365,6 +365,24 @@ https://github.com/user-attachments/assets/afeae3a6-61e2-4875-b431-1d4f935602b1
 https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 
 
+## Project 10: U.S. States Game
+
+## Algorithm
+
+1. **Initialize Game**: Set up the screen with a blank map image and initialize variables for tracking the score and guessed states.
+2. **Load Data**: Read the CSV file containing state names and their corresponding coordinates.
+3. **Main Game Loop**:
+   - Prompt the user to input a state name.
+   - Check if the input state is in the list of all states.
+   - If the user types "Exit", create a list of missed states and save it to a CSV file.
+   - If the state is valid and not already guessed, update the guessed states list and score.
+   - Use the `turtle` library to place the state name on the map at the corresponding coordinates.
+4. **End Game**: Close the game window when the user exits.
+
+<img width="477" alt="image" src="https://github.com/user-attachments/assets/dcd36024-9e7c-452c-9117-8fb572828507">
+<img width="177" alt="image" src="https://github.com/user-attachments/assets/f6ce05de-2518-47ad-93cc-67465f623375">
+
+
 
 **More projects will be uploaded soon!**
 
