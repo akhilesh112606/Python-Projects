@@ -382,6 +382,38 @@ https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 <img width="477" alt="image" src="https://github.com/user-attachments/assets/dcd36024-9e7c-452c-9117-8fb572828507">
 <img width="177" alt="image" src="https://github.com/user-attachments/assets/f6ce05de-2518-47ad-93cc-67465f623375">
 
+## Project 11: Pomodoro Timer
+
+## Alogrithm
+
+**1. Initialize**
+- Set up a Tkinter window.
+- Define constants for colors, fonts, and timer durations.
+- Initialize global variables for repetitions, ticks, and reset handle.
+
+**2. Reset Timer**
+- Reset `REPS` and `TICK`.
+- Update UI to show "TIMER" and reset countdown display.
+- Cancel any active timer using `window.after_cancel()`.
+
+**3. Start Timer**
+- Increment `REPS`.
+- Determine the timer phase (work, short break, or long break) based on `REPS`.
+- Update UI with the current phase and start the countdown.
+
+**4. Countdown**
+- Update countdown display every second.
+- On countdown completion, start the next timer phase.
+- Update tick marks if the session is completed.
+
+**5. UI Setup**
+- Configure window appearance and layout.
+- Create and place UI elements such as labels, buttons, and canvas.
+
+**6. Run Application**
+- Start the Tkinter event loop with `window.mainloop()`.
+  
+<img width="416" alt="tomato screenshot" src="https://github.com/user-attachments/assets/017f3720-555d-4e75-9f6a-31877497090e">
 
 
 **More projects will be uploaded soon!**
