@@ -415,6 +415,27 @@ https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
   
 <img width="416" alt="tomato screenshot" src="https://github.com/user-attachments/assets/017f3720-555d-4e75-9f6a-31877497090e">
 
+## Project 12: Password Manager
+
+## Algorithm
+
+1. **Password Generation**:
+    - A random password is generated using letters, numbers, and symbols.
+    - The length of the password is random, with 8-10 letters, 2-4 symbols, and 2-4 numbers.
+    - The password is shuffled to ensure randomness and copied to the clipboard for ease of use.
+
+2. **Password Storage**:
+    - User inputs the website name, email/username, and password into the UI.
+    - On clicking the "Add" button:
+        - The program checks if all fields are filled.
+        - If filled, a confirmation message is displayed.
+        - Once confirmed, the details are written to the `data.txt` file.
+        - The input fields are then cleared, and the email/username field is reset to a default value.
+
+<img width="346" alt="1" src="https://github.com/user-attachments/assets/e30be7d2-c637-49bb-9123-b26c4c1f3250">
+<img width="512" alt="2" src="https://github.com/user-attachments/assets/b00928b3-5956-4a3a-806c-ff7f4f1ccb35">
+<img width="477" alt="3" src="https://github.com/user-attachments/assets/2df99f0b-d7b5-456f-9532-f0696d417e48">
+
 
 **More projects will be uploaded soon!**
 
