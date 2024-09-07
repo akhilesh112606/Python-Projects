@@ -436,6 +436,39 @@ https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 <img width="512" alt="2" src="https://github.com/user-attachments/assets/b00928b3-5956-4a3a-806c-ff7f4f1ccb35">
 <img width="477" alt="3" src="https://github.com/user-attachments/assets/2df99f0b-d7b5-456f-9532-f0696d417e48">
 
+## Project 12: Flipcard Learning
+## Algorithm
+
+### 1. Initialize the Application
+- Load libraries: `tkinter`, `pandas`, `random`.
+- Attempt to read `data/words_to_learn.csv`. If not found, load `data/french_words.csv`.
+
+### 2. Prepare Data
+- Convert CSV data into a list of dictionaries.
+
+### 3. Define Button Functions
+- **`next_slide()`**
+  - Select a random word pair.
+  - Display French word.
+  - Schedule `flip_card()` in 3 seconds.
+- **`flip_card()`**
+  - Show English translation.
+- **`is_known()`**
+  - Remove current word pair from list.
+  - Update `data/words_to_learn.csv`.
+  - Call `next_slide()`.
+
+### 4. Setup the User Interface
+- Create a `tkinter` window with a canvas for flashcards.
+- Load and set card images and buttons.
+- Show the initial French word.
+
+### 5. Start the Application
+- Call `next_slide()` to display the first word.
+- Start the `tkinter` main loop.
+
+<img width="673" alt="one" src="https://github.com/user-attachments/assets/e77f10c3-baaa-43e1-bbac-3c22a40aaa6e">
+<img width="672" alt="two" src="https://github.com/user-attachments/assets/85867fc9-e10b-474f-9976-4c9aca8c96a7">
 
 **More projects will be uploaded soon!**
 
