@@ -436,7 +436,7 @@ https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 <img width="512" alt="2" src="https://github.com/user-attachments/assets/b00928b3-5956-4a3a-806c-ff7f4f1ccb35">
 <img width="477" alt="3" src="https://github.com/user-attachments/assets/2df99f0b-d7b5-456f-9532-f0696d417e48">
 
-## Project 12: Flipcard Learning
+## Project 13: Flipcard Learning
 ## Algorithm
 
 ### 1. Initialize the Application
@@ -469,6 +469,39 @@ https://github.com/user-attachments/assets/775193b3-cd40-40e1-b68c-a5e1ebe01873
 
 <img width="673" alt="one" src="https://github.com/user-attachments/assets/e77f10c3-baaa-43e1-bbac-3c22a40aaa6e">
 <img width="672" alt="two" src="https://github.com/user-attachments/assets/85867fc9-e10b-474f-9976-4c9aca8c96a7">
+This Python application tracks the position of the International Space Station (ISS) and checks if it is visible from your current location. The program also considers sunrise and sunset times to determine if the ISS is visible in the sky based on the time of day.
+
+## Project 14 : Satelitte Coordinates Detector
+
+## Alogrithm
+
+### 1. **Fetch ISS Position**
+   - The application retrieves the current position of the ISS using the Open Notify API (`http://api.open-notify.org/iss-now.json`).
+   - The API provides the latitude and longitude of the ISS, which are stored for comparison with your location.
+
+### 2. **Get Sunrise and Sunset Data**
+   - The application fetches sunrise and sunset times using the `Sunrise-Sunset` API (`https://api.sunrise-sunset.org/json`).
+   - Based on your latitude and longitude, the API returns the time of sunrise and sunset in UTC.
+   - These times are extracted and converted into hour values for comparison with the current time.
+
+### 3. **Check ISS Visibility**
+   - The application determines whether the ISS is within a visible range of your location. This is done by checking if the ISS’s current latitude and longitude are within ±5 degrees of your location's latitude and longitude.
+   - The visibility also depends on whether the current time is between sunset and sunrise (i.e., during the night).
+   - If both conditions are met (proximity and nighttime), the ISS is considered visible.
+
+### 4. **Visual Feedback with Tkinter**
+   - The application creates a graphical user interface (GUI) using Tkinter.
+   - If the ISS is visible, the background of the window turns green, and the text displays "CAN SEE ISS."
+   - If the ISS is not visible, the background turns red, and the text displays "CANNOT SEE ISS."
+   - The position of the ISS is checked every second using the `window.after()` method in Tkinter, ensuring real-time updates.
+
+## APIs Used
+- **Open Notify API**: Provides real-time data on the current position of the ISS.
+- **Sunrise-Sunset API**: Provides the sunrise and sunset times for a given location.
+
+<img width="148" alt="one" src="https://github.com/user-attachments/assets/d3990b5b-105b-4174-a732-c3ee501bc0c7">
+<img width="153" alt="two" src="https://github.com/user-attachments/assets/8c3435e7-b11f-4f1a-bd3e-e70ddd1c5938">
+
 
 **More projects will be uploaded soon!**
 
