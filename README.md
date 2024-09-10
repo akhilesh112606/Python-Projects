@@ -503,6 +503,39 @@ This Python application tracks the position of the International Space Station (
 <img width="153" alt="two" src="https://github.com/user-attachments/assets/8c3435e7-b11f-4f1a-bd3e-e70ddd1c5938">
 
 
+## Project 15 - Quizzler Game
+
+## Algorithm
+
+1. **Question and Answer Data**
+   - Fetches a list of True/False questions from the Open Trivia Database API using a GET request.
+   - The `Question` class is used to store each question's text and correct answer.
+   
+2. **Setup Question Bank**
+   - The `question_data` is iterated to create a `question_bank`, which stores all questions as instances of the `Question` class.
+
+3. **QuizBrain Class**
+   - Manages the quiz logic, including keeping track of the question number and score.
+   - Provides the `next_question()` method to serve the next question in the quiz.
+   - The `check_answer(user_answer)` method validates if the user's answer is correct.
+
+4. **QuizDesign Class (UI Layer)**
+   - The user interface is created using the Tkinter library.
+   - Contains buttons for answering True or False to the displayed questions.
+   - Displays feedback to the user by changing the background color of the question canvas (green for correct, red for incorrect).
+   - The `change_question()` method updates the UI with a new question after each answer.
+   
+5. **Game Flow**
+   - When the app starts, the first question is shown.
+   - User answers by clicking either the "True" or "False" button.
+   - The quiz continues until there are no more questions, after which the game ends and disables the answer buttons.
+
+<img width="251" alt="four" src="https://github.com/user-attachments/assets/2d5d000a-dc2e-4644-b1fb-2e5b6d1b0ee4">
+<img width="257" alt="one" src="https://github.com/user-attachments/assets/9973cba9-be39-49fb-8f36-14e90771c962">
+<img width="253" alt="three" src="https://github.com/user-attachments/assets/b7f613bc-5475-458c-b7be-117f614fef0d">
+<img width="257" alt="twp" src="https://github.com/user-attachments/assets/1be128b2-04fb-4519-87f8-38d1ade8b26a">
+
+
 **More projects will be uploaded soon!**
 
 
