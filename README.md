@@ -535,6 +535,24 @@ This Python application tracks the position of the International Space Station (
 <img width="253" alt="three" src="https://github.com/user-attachments/assets/b7f613bc-5475-458c-b7be-117f614fef0d">
 <img width="257" alt="twp" src="https://github.com/user-attachments/assets/1be128b2-04fb-4519-87f8-38d1ade8b26a">
 
+## Project 16 - Rain Alert SMS
+
+## Algorithm
+
+1. **Get Weather Data:**
+   - The script retrieves weather data using the OpenWeatherMap API based on latitude and longitude coordinates.
+   
+2. **Parse Weather Data:**
+   - It extracts the weather forecast for the next 12 hours from the API response.
+   
+3. **Check for Rain:**
+   - The script loops through the 12-hour forecast and checks the weather condition codes to determine if rain is expected (codes less than 700).
+   
+4. **Send SMS Alert:**
+   - If rain is detected, an SMS message is sent using the Twilio API to notify the user.
+![two](https://github.com/user-attachments/assets/285cd829-39f8-4482-95ba-387de1778238)
+<img width="877" alt="one" src="https://github.com/user-attachments/assets/e47b6e38-1eee-4329-b2a7-50e5887fa381">
+
 
 **More projects will be uploaded soon!**
 
