@@ -553,6 +553,35 @@ This Python application tracks the position of the International Space Station (
 ![two](https://github.com/user-attachments/assets/285cd829-39f8-4482-95ba-387de1778238)
 <img width="877" alt="one" src="https://github.com/user-attachments/assets/e47b6e38-1eee-4329-b2a7-50e5887fa381">
 
+## Project 17 - Stock Market Price Alert SMS
+
+## Algorithm
+
+**Step 1: Get Stock Prices**
+1. Use Alpha Vantage API to get daily stock data for Tesla (TSLA).
+2. Extract the closing prices for:
+   - `yesterday_price` (most recent day).
+   - `day_before_yesterday_price` (day before the most recent day).
+
+**Step 2: Calculate Price Difference**
+1. Find the difference between the two prices:
+   - `difference = abs(yesterday_price - day_before_yesterday_price)`
+2. Calculate the percentage change between the two prices:
+   - `percentage_difference = (difference / average of both prices) * 100`
+
+**Step 3: Get News**
+1. If the percentage change is above a threshold (e.g., 5%), use NewsAPI to get the latest news about Tesla.
+2. Extract the top 3 news headlines.
+
+**Step 4: Send SMS Alerts**
+1. Use Twilio API to send SMS with the news headlines if the condition is met.
+   
+**Step 5: End Program**
+1. Output confirmation of actions taken.
+
+![WhatsApp Image 2024-09-16 at 21 51 22_e4c31b7b](https://github.com/user-attachments/assets/b1c8ed10-f678-437b-b14e-647e7002f720)
+![asdfaf](https://github.com/user-attachments/assets/2e24b0f9-0dbb-4852-bf7f-7e5f58f46449)
+
 
 **More projects will be uploaded soon!**
 
