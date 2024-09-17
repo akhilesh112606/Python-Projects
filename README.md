@@ -582,6 +582,30 @@ This Python application tracks the position of the International Space Station (
 ![WhatsApp Image 2024-09-16 at 21 51 22_e4c31b7b](https://github.com/user-attachments/assets/b1c8ed10-f678-437b-b14e-647e7002f720)
 ![asdfaf](https://github.com/user-attachments/assets/2e24b0f9-0dbb-4852-bf7f-7e5f58f46449)
 
+## Project 18 - Graphical Habit Tracker
+
+## Algorithm
+
+**1. Initialize Required Libraries and Variables**
+
+- Import the necessary libraries:
+  - `requests`: For making HTTP requests to the Pixela API.
+  - `datetime`: To get the current date.
+
+- Define the following constants:
+  - `USERNAME`: Your Pixela username.
+  - `TOKEN`: A secure token for authenticating API requests.
+  - `GRAPH_ID`: The unique ID for the graph you're creating.
+  - `DATE`: Current date in the format `YYYYMMDD` for creating and updating progress pixels.
+  
+**2. Define API Endpoints**
+
+- Define the base Pixela API endpoint:
+  ```python
+  pixela_endpoint = "https://pixe.la/v1/users"
+
+<img width="947" alt="file" src="https://github.com/user-attachments/assets/ff8d1f70-5e62-44db-85cd-65e811962b18">
+
 
 **More projects will be uploaded soon!**
 
