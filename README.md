@@ -606,6 +606,54 @@ This Python application tracks the position of the International Space Station (
 
 <img width="947" alt="file" src="https://github.com/user-attachments/assets/ff8d1f70-5e62-44db-85cd-65e811962b18">
 
+## Project 19 - Workout Tracker using GOOGLE SHEETS
+
+## Algorithm
+
+
+**1. Setup**
+- **Import necessary libraries**: The program uses the `requests` and `datetime` libraries for API requests and date-time management.
+- **Define constants**:
+  - `APP_ID` and `API_KEY`: These are credentials for the Nutritionix API.
+  - `DOMAIN_ENDPOINT`: Base URL for the Nutritionix API.
+  - `EXERCISE_ENDPOINT`: Specific path for natural exercise processing in the Nutritionix API.
+  - `ADD_ROW_ENDPOINT`: The URL for the Sheety API to append workout data to a Google Sheet.
+  - Get the current date (`TODAY`) and current time (`TIME`).
+
+**2. Input and NLP Processing**
+- **Prompt the user** to enter the details of the exercise they performed, in natural language format (e.g., "ran for 30 minutes").
+- **Send a `POST` request** to the Nutritionix API:
+  - The request uses the exercise input as part of the `data` parameter.
+  - The API response returns details such as:
+    - Exercise name (e.g., "running")
+    - Duration (in minutes)
+    - Calories burned (based on the type of exercise and duration).
+    
+**3. Extract Exercise Data**
+- **Parse the response** from the Nutritionix API:
+  - `EXERCISE`: The specific exercise the user performed.
+  - `DURATION`: The duration of the exercise (in minutes).
+  - `CALORIES`: The number of calories burned during the exercise.
+
+**4. Prepare Data for Logging**
+- **Create a new row** of data to be sent to the Google Sheet, structured as:
+  - `date`: The current date of the exercise.
+  - `time`: The current time when the exercise was logged.
+  - `exercise`: The exercise performed (from Nutritionix API).
+  - `duration`: Duration of the exercise in minutes.
+  - `calories`: Calories burned during the exercise.
+
+**5. Send Data to Google Sheets**
+- **Send a `POST` request** to the Sheety API:
+  - The new row data is passed as `JSON`.
+  - If the API returns a success status (HTTP 200), print a success message confirming the row was added.
+
+**6. Completion**
+- The program ends once the workout data is successfully logged.
+
+![two](https://github.com/user-attachments/assets/e2a15b5e-09d7-4182-8157-937f0767cf2b)
+![one](https://github.com/user-attachments/assets/c9a4428e-7861-4af4-9fd1-3e65155c6c61)
+
 
 **More projects will be uploaded soon!**
 
