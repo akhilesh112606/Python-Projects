@@ -655,6 +655,30 @@ This Python application tracks the position of the International Space Station (
 ![one](https://github.com/user-attachments/assets/c9a4428e-7861-4af4-9fd1-3e65155c6c61)
 
 
+## Project 20 - Cheap Flight Price SMS Alert
+
+## Algorithm
+1. **Get Flight Data**:
+   - Initialize the `DataManager` object to retrieve the current flight data from Google Sheets.
+   - Check if any cities are missing their IATA code. If found, use `FlightSearch` to fetch and update the missing IATA codes.
+
+2. **Update Sheets**:
+   - For each city, if the IATA code was updated, update the Google Sheet using the `DataManager`.
+
+3. **Check for Cheap Flights**:
+   - Loop through each city in the sheet:
+     - Retrieve the city’s lowest price from the sheet.
+     - Search for the cheapest flight using `FlightData`.
+     - Compare the newly found price to the price in the sheet.
+     - If the new price is lower, send an SMS alert to the user using `NotificationManager`.
+
+4. **Notify User**:
+   - If a cheaper flight is found, send an SMS using Twilio’s API to notify the user.
+
+<img width="262" alt="one" src="https://github.com/user-attachments/assets/750ccb13-6da8-4b52-9f86-7458e46ec3cc">
+![two](https://github.com/user-attachments/assets/c16d3e44-c2ac-4ab9-8159-59006c988aa7)
+
+
 **More projects will be uploaded soon!**
 
 
