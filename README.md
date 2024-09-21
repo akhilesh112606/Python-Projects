@@ -655,28 +655,57 @@ This Python application tracks the position of the International Space Station (
 ![one](https://github.com/user-attachments/assets/c9a4428e-7861-4af4-9fd1-3e65155c6c61)
 
 
-## Project 20 - Cheap Flight Price SMS Alert
+## Project 20 - Cheap Flight Price SMS & EMAIL Alert
 
 ## Algorithm
-1. **Get Flight Data**:
-   - Initialize the `DataManager` object to retrieve the current flight data from Google Sheets.
-   - Check if any cities are missing their IATA code. If found, use `FlightSearch` to fetch and update the missing IATA codes.
+**1. Initialization**:
+   - Import the required modules:
+     - `datetime`, `requests`, `smtplib`, `twilio.rest.Client`
+   - Instantiate the following objects:
+     - `DataManager` to manage sheet data.
+     - `FlightSearch` to search for flight data and IATA codes.
+     - `FlightData` to manage flight data retrieval.
+     - `NotificationManager` to send email and SMS notifications.
 
-2. **Update Sheets**:
-   - For each city, if the IATA code was updated, update the Google Sheet using the `DataManager`.
+**2. Set Date Range**:
+   - Define a `DATE_SPAN` variable by adding 180 days to the current date.
+   - Format the date into a string to use in API requests and notifications.
 
-3. **Check for Cheap Flights**:
-   - Loop through each city in the sheet:
-     - Retrieve the city’s lowest price from the sheet.
-     - Search for the cheapest flight using `FlightData`.
-     - Compare the newly found price to the price in the sheet.
-     - If the new price is lower, send an SMS alert to the user using `NotificationManager`.
+**3. Fetch Google Sheet Data**:
+   - Retrieve data from Google Sheets using the `DataManager.get_sheet_data()` method.
+   - Initialize an empty list `iata_missing_list` to store city names where IATA codes are missing.
 
-4. **Notify User**:
-   - If a cheaper flight is found, send an SMS using Twilio’s API to notify the user.
+**4. Check for Missing IATA Codes**:
+   - Loop through the sheet data and identify entries where `iataCode` is empty.
+   - Append cities with missing IATA codes to `iata_missing_list`.
 
-<img width="262" alt="one" src="https://github.com/user-attachments/assets/750ccb13-6da8-4b52-9f86-7458e46ec3cc">
-![two](https://github.com/user-attachments/assets/c16d3e44-c2ac-4ab9-8159-59006c988aa7)
+**5. Update IATA Codes**:
+   - Pass the list of missing cities to `FlightSearch.update_iata_codes()` to fetch and update IATA codes.
+   - Update the Google Sheet with the newly fetched IATA codes using `DataManager.update_sheet_data()`.
+
+**6. Extract Email Addresses**:
+   - Retrieve email addresses from Google Sheets using `DataManager.get_EMAIL_data()` and store them in the `email_IDs` list.
+
+**7. Check for Flight Deals**:
+   - Loop through each city in the sheet data:
+     - Use `FlightData.flight_cheapest_flight()` to fetch the lowest price for a given city.
+     - Compare the current flight price to the previously recorded lowest price (`price_in_doc`).
+     - If the new price is lower, send SMS and email notifications to the user using `NotificationManager.send_sms()` and `NotificationManager.send_mail()`.
+
+**8. Send Notifications**:
+   - **SMS**:
+     - Use the Twilio API to send an SMS notification about the lower price.
+     - Message content includes details about the flight, such as the price, departure city, destination city, and available date range.
+   - **Email**:
+     - Use the SMTP module to send an email to all recipients retrieved from Google Sheets.
+     - The email contains details about the flight and its new lower price.
+
+![one](https://github.com/user-attachments/assets/b248832b-bc41-4df8-a679-038e5de8c6ab)
+![four](https://github.com/user-attachments/assets/bf0cdc46-70df-4771-85d3-259622a0f05a)
+![three](https://github.com/user-attachments/assets/59476843-045c-45f8-bc19-3de3d2d110eb)
+![two](https://github.com/user-attachments/assets/a773a2b0-4e7e-457d-8aa3-c9a8415a8769)
+![five](https://github.com/user-attachments/assets/78bab9df-aaf8-4530-8531-57c9e4fa5aa0)
+
 
 
 **More projects will be uploaded soon!**
