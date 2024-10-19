@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 21)
+# Python-Projects (TOTAL - 22)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -739,6 +739,48 @@ This Python application tracks the position of the International Space Station (
 <img width="318" alt="pic1" src="https://github.com/user-attachments/assets/89d11aa6-5fd3-4e6d-9c9c-fd3f3516ec3c">
 <img width="245" alt="pic2" src="https://github.com/user-attachments/assets/cc80a97c-94bd-4b7f-9e63-ca8287a94873">
 <img width="437" alt="pic3" src="https://github.com/user-attachments/assets/c264ccd1-395d-4b35-998e-d7391ed347a4">
+
+## Project 22 - Automated Amazon Price Tracker
+## ALgorithm
+1. **Input Product URL**:
+    - Prompt the user to enter the Amazon product link.
+
+2. **Set Target Price**:
+    - Define a target price for the product (can be modified by the user).
+
+3. **Fetch Product Page**:
+    - Attempt to connect to the specified product URL.
+        - If successful, print "Website Connected!"
+        - If unsuccessful, print "Website Connection Failed!" and exit the program.
+
+4. **Parse HTML**:
+    - Use BeautifulSoup to parse the HTML content of the product page.
+
+5. **Extract Product Title**:
+    - Locate the product title using the appropriate HTML tags and classes.
+    - Clean up the title string by removing extra spaces.
+
+6. **Extract Product Price**:
+    - Locate the product price using the appropriate HTML tags and classes.
+    - Remove any commas and dots from the price string.
+    - Convert the cleaned price string to an integer.
+
+7. **Display Product Information**:
+    - Print the product title and the current price.
+
+8. **Email Setup**:
+    - Define email sender and receiver details (email addresses and SMTP credentials).
+    - Compose the email body with the product title and price.
+
+9. **Check Price Against Target**:
+    - If the current product price is less than the target price:
+        - Create an email message with the subject "Price Drop Alert!" and the email body.
+        - Attempt to connect to the SMTP server and send the email.
+            - If successful, print "EMAIL SENT SUCCESSFULLY!"
+            - If unsuccessful, print "EMAIL FAILED! ERROR OCCURED"
+         
+![pic2](https://github.com/user-attachments/assets/6b1ca25b-3509-4089-8530-081cfe9a3923)
+<img width="856" alt="pic1" src="https://github.com/user-attachments/assets/ba47dac5-0f3e-4c9d-878e-97bb3e5ebb56">
 
 
 **More projects will be uploaded soon!**
