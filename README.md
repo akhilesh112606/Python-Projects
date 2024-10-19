@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 20)
+# Python-Projects (TOTAL - 21)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -706,6 +706,39 @@ This Python application tracks the position of the International Space Station (
 ![two](https://github.com/user-attachments/assets/a773a2b0-4e7e-457d-8aa3-c9a8415a8769)
 ![five](https://github.com/user-attachments/assets/78bab9df-aaf8-4530-8531-57c9e4fa5aa0)
 
+## Project 21 - Spotify Playlist Maker - TOP 100 BillBoard
+## ALgorithm
+1. **User Input**:
+    - Prompt the user to input a date in the format `YYYY-MM-DD`.
+
+2. **Validate Date**:
+    - Use the `datetime.strptime()` method to validate the date format.
+    - If the date is invalid, print an error message and exit.
+
+3. **Fetch Billboard Chart**:
+    - Make a GET request to the Billboard website to retrieve the HTML data for the chart corresponding to the input date.
+    - Parse the HTML using `BeautifulSoup` to extract the song titles from the page.
+    - Store the song titles in a list.
+
+4. **Spotify Authentication**:
+    - Use `SpotifyOAuth` from the Spotipy library to authenticate with Spotify using `Client_ID`, `Client_Secret`, and `Spotify_Username`.
+    - Obtain an authentication token to modify the user's Spotify playlist.
+
+5. **Find Song URIs on Spotify**:
+    - For each song title in the list:
+        - Search Spotify's track database using the song title.
+        - Retrieve the song's URI (if available) and add it to a list.
+        - Print a message if the song is not found.
+
+6. **Create a New Playlist**:
+    - Use Spotify's API to create a private playlist on the user's account with the name corresponding to the input date and Billboard Hot 100.
+
+7. **Add Songs to Playlist**:
+    - Add all the song URIs from the list to the newly created playlist on Spotify.
+
+<img width="318" alt="pic1" src="https://github.com/user-attachments/assets/89d11aa6-5fd3-4e6d-9c9c-fd3f3516ec3c">
+<img width="245" alt="pic2" src="https://github.com/user-attachments/assets/cc80a97c-94bd-4b7f-9e63-ca8287a94873">
+<img width="437" alt="pic3" src="https://github.com/user-attachments/assets/c264ccd1-395d-4b35-998e-d7391ed347a4">
 
 
 **More projects will be uploaded soon!**
