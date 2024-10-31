@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 22)
+# Python-Projects (TOTAL - 23)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -782,6 +782,43 @@ This Python application tracks the position of the International Space Station (
 ![pic2](https://github.com/user-attachments/assets/6b1ca25b-3509-4089-8530-081cfe9a3923)
 <img width="856" alt="pic1" src="https://github.com/user-attachments/assets/ba47dac5-0f3e-4c9d-878e-97bb3e5ebb56">
 
+## Project 23 - Automated LinkedIN Job Applier
+## Algorithm
+
+1. **Set up WebDriver Options**:
+   - Configure the WebDriver options to keep the Chrome browser open after execution.
+   
+2. **Initialize WebDriver**:
+   - Launch a new Chrome WebDriver instance with the configured options.
+   
+3. **Navigate to LinkedIn Login Page**:
+   - Open the LinkedIn login page by specifying the URL (`https://www.linkedin.com/login`).
+
+4. **Log in to LinkedIn**:
+   - Locate the email and password input fields and the "Sign in" button.
+   - Input the email and password, then click the "Sign in" button to log in.
+   
+5. **Access LinkedIn Jobs Section**:
+   - Navigate to the "Jobs" tab by locating and clicking the corresponding element.
+
+6. **Search for Job Title**:
+   - Locate the job search input box, input the desired job title (e.g., "Python Developer"), and press Enter to perform the search.
+   
+7. **Select Easy Apply Option**:
+   - Locate the "Easy Apply" button for a job listing and click it to open the application form.
+
+8. **Fill in Application Details**:
+   - Input personal details such as the mobile number in the appropriate fields.
+   - Click the "Next" button to proceed to additional steps, if required.
+
+9. **Answer Additional Questions**:
+   - If a dialogue box with questions appears, locate and select appropriate answers.
+
+10. **Review and Submit Application**:
+    - Click the "Review" button to review the application details.
+    - Finally, locate and click the "Submit" button to complete the application process.
+
+https://github.com/user-attachments/assets/2cbb0181-e8d0-407b-8f09-a12a6f529901
 
 **More projects will be uploaded soon!**
 
