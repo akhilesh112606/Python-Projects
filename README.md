@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 23)
+# Python-Projects (TOTAL - 24)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -820,6 +820,50 @@ This Python application tracks the position of the International Space Station (
 
 https://github.com/user-attachments/assets/2cbb0181-e8d0-407b-8f09-a12a6f529901
 
+## Project 24 - Automated Tinder Swiper
+## Algorithm
+1. **Set Up Chrome Browser to Stay Open After Code Completion**
+   - Use `webdriver.ChromeOptions()` to configure Chrome to remain open when the code execution finishes.
+   - Add the `detach` option to `ChromeOptions`.
+
+2. **Initialize Web Driver and Open Tinder Recovery Link**
+   - Use `webdriver.Chrome()` with the Chrome options configured.
+   - Open Tinder's account recovery URL.
+
+3. **Pause Execution for Page to Load** 
+   - Wait 10 seconds to allow all elements to load.
+
+4. **Accept Cookies**
+   - Locate and click the cookie acceptance button using its XPath.
+
+5. **Enter Mobile Number**
+   - Locate the mobile number input box by ID.
+   - Input your mobile number or login credentials.
+
+6. **Submit Login Form**
+   - Locate and click the submit button to proceed.
+
+7. **Allow Location Access**  
+   - After a 15-second pause, locate and click the location access button to allow location access.
+
+8. **Dismiss Notifications Popup**  
+   - Wait 2 seconds.
+   - Locate and click the button to dismiss notification requests.
+
+9. **Automate 'Like' Button Clicks**
+   - Locate the 'like' button on the page.
+   - Set up a loop to repeat the 'like' button click for a specified number of times (e.g., 100).
+   
+10. **Handle Exceptions for Intercepted Clicks and Matches**
+    - For each iteration, wait 1 second and attempt to click the 'like' button.
+    - **If Element Not Found**: Pause for 2 seconds before trying again.
+    - **If Element Click Intercepted**: Check if there's a match popup.
+      - If found, locate and click the "It's a Match" button to dismiss.
+      - If not, pause for 2 seconds before retrying.
+
+11. **Close Browser**
+    - End the session by calling `driver.quit()` after the loop completes.
+   
 **More projects will be uploaded soon!**
 
 
