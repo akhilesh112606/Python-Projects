@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 24)
+# Python-Projects (TOTAL - 25)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -863,6 +863,49 @@ https://github.com/user-attachments/assets/2cbb0181-e8d0-407b-8f09-a12a6f529901
 
 11. **Close Browser**
     - End the session by calling `driver.quit()` after the loop completes.
+
+## Project 25 - Automated XTwitter Complpaint Bot
+## Algorithm
+   ## Algorithm
+
+1. **Initialize Browser Options:**
+   - Set up `chrome_options` for ChromeDriver with an option to keep the browser open.
+
+2. **Launch WebDriver Instances:**
+   - Open two browser windows:
+     - `ookla` for internet speed testing.
+     - `driver` for Twitter login and interaction.
+
+3. **Navigate to Websites:**
+   - Load `https://www.speedtest.net/` in the `ookla` browser.
+   - Load Twitter's signup/login page in the `driver` browser.
+
+4. **Start Internet Speed Test:**
+   - Locate and click the "Start Test" button on the Speedtest website.
+   - Wait for the test to complete and extract the download and upload speeds.
+
+5. **Extract Speed Test Results:**
+   - Use `find_element` with appropriate selectors to get the download and upload speed data.
+   - Store the text values in `download_text` and `upload_text`.
+
+6. **Twitter Login Process:**
+   - Locate the login button on Twitter and click it.
+   - Enter the username/email and click "Next".
+   - Input the phone number (if required) and proceed.
+   - Enter the password and log in.
+
+7. **Compose and Send Tweet:**
+   - Navigate to the tweet input field.
+   - Write a tweet containing the speed test results.
+   - Optionally, submit the tweet.
+
+8. **Custom Message:**
+   - Print or log the custom message with download and upload speeds.
+  
+
+https://github.com/user-attachments/assets/7d5ed24b-68dc-494e-b9b3-bbc6eb0ba946
+
+
    
 **More projects will be uploaded soon!**
 
