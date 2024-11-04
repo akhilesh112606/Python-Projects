@@ -939,6 +939,57 @@ https://github.com/user-attachments/assets/7d5ed24b-68dc-494e-b9b3-bbc6eb0ba946
 
 https://github.com/user-attachments/assets/796c231c-500d-49c6-a80f-0edafad4b82a
 
+## Project 27 - Automation of Data Entry
+## Algorithm
+
+1. **Import Required Libraries:**
+   - Import `time`, `http.client`, `BeautifulSoup`, `webdriver`, `By`, `Keys`, and `requests`.
+
+2. **Define URLs:**
+   - Set the `ZILLOW_LINK` to the Zillow clone website.
+   - Set the `GOOGLE_FORMS_LINK` to the Google Form for data submission.
+
+3. **Send a GET Request:**
+   - Use `requests.get()` to fetch the content of the Zillow clone page.
+   - Parse the response using `BeautifulSoup`.
+
+4. **Extract Property Links:**
+   - Find all property cards using the class `property-card-link`.
+   - Iterate through each card and extract the `href` attribute to get the property links.
+   - Store the links in a list called `all_property_link`.
+
+5. **Extract Property Addresses:**
+   - Find all address elements using the `<address>` tag.
+   - Iterate through each address, format the text, and store it in a list called `all_address`.
+
+6. **Extract Property Prices:**
+   - Find all price elements using the class `PropertyCardWrapper__StyledPriceLine`.
+   - Iterate through each price element, clean the text to remove unwanted characters, and store it in a list called `all_prices`.
+
+7. **Set Up Selenium WebDriver:**
+   - Create a Chrome WebDriver instance with options to detach the browser.
+
+8. **Navigate to Google Forms:**
+   - Use the WebDriver to open the Google Forms link.
+   - Wait for 2 seconds to allow the page to load.
+
+9. **Iterate Through Extracted Data:**
+   - Use a `zip()` function to iterate through `all_prices`, `all_address`, and `all_property_link` simultaneously.
+     - For each iteration:
+       1. Locate the input fields for address, price, and property link using CSS selectors.
+       2. Send the corresponding address, price, and link data to each field.
+       3. Locate and click the submit button to send the response.
+       4. Wait for 2 seconds for the submission to process.
+       5. Locate and click the option to submit another response.
+       6. Wait for another 2 seconds to reset the form.
+
+10. **End of Program:**
+    - The program will continue to submit responses until all data is processed.
+
+
+
+https://github.com/user-attachments/assets/ea99b5f8-8937-4c50-aecc-675a71ef78e2
+
 
 
 **More projects will be uploaded soon!**
