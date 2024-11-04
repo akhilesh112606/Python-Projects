@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 26)
+# Python-Projects (TOTAL - 27)
 
 ## Project - 1: Random Number Guessing Game
 
