@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 25)
+# Python-Projects (TOTAL - 26)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -866,7 +866,6 @@ https://github.com/user-attachments/assets/2cbb0181-e8d0-407b-8f09-a12a6f529901
 
 ## Project 25 - Automated XTwitter Complpaint Bot
 ## Algorithm
-   ## Algorithm
 
 1. **Initialize Browser Options:**
    - Set up `chrome_options` for ChromeDriver with an option to keep the browser open.
@@ -899,14 +898,49 @@ https://github.com/user-attachments/assets/2cbb0181-e8d0-407b-8f09-a12a6f529901
    - Write a tweet containing the speed test results.
    - Optionally, submit the tweet.
 
-8. **Custom Message:**
+8. **Custom Message:
    - Print or log the custom message with download and upload speeds.
   
 
 https://github.com/user-attachments/assets/7d5ed24b-68dc-494e-b9b3-bbc6eb0ba946
 
+## Project 26 - Automated Instagram 
+## Algorithm
+   1. **Setup**
+- Import necessary libraries:
+  - Use `selenium` for browser automation.
+  - Use `time` for delays to ensure elements load properly.
+- Initialize the `InstaFollower` class:
+  - Create the `__init__` method to:
+    - Configure Chrome browser options to keep the browser open after the script runs.
+    - Create an instance of the Chrome WebDriver to interact with the Instagram web interface.
+    - Navigate to the Instagram login page (`https://www.instagram.com/`).
 
-   
+2. **Login Method**
+- Locate elements and input credentials:
+  - Locate the username input field using an XPath selector and send the username.
+  - Locate the password input field using an XPath selector and send the password.
+  - Locate and click the login button using an XPath selector.
+- Handle the "Not Now" prompt:
+  - Wait for the page to load using `time.sleep()`.
+  - Locate and click the "Not Now" button for notifications using a CSS selector.
+
+3. **Find Followers Method**
+- Navigate to the followers section:
+  - Locate and click the search button using a CSS selector.
+  - Wait for the page to load and locate the followers button using a CSS selector.
+  - Click the followers button to open the followers list.
+
+4. **Completion**
+- The program completes the automation sequence once the followers section is accessed successfully.
+- The browser remains open for further inspection due to the Chrome option configuration.
+
+
+
+https://github.com/user-attachments/assets/796c231c-500d-49c6-a80f-0edafad4b82a
+
+
+
 **More projects will be uploaded soon!**
 
 
