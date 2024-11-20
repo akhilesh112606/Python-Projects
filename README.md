@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 27)
+# Python-Projects (TOTAL - 28)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -985,10 +985,45 @@ https://github.com/user-attachments/assets/796c231c-500d-49c6-a80f-0edafad4b82a
 
 10. **End of Program:**
     - The program will continue to submit responses until all data is processed.
-
-
-
+   
 https://github.com/user-attachments/assets/ea99b5f8-8937-4c50-aecc-675a71ef78e2
+
+## Project 28 - Cafe Rating Website
+## Algorithm
+
+1. **Extract Property Data**
+   - Use a web scraping tool (e.g., BeautifulSoup or Selenium) to extract property details from a website.
+   - Extract the following data for each property:
+     - Address
+     - Price
+     - Property link
+
+2. **Store Extracted Data**
+   - Store the extracted data in three separate lists:
+     - `all_prices`: List containing the price of each property.
+     - `all_address`: List containing the address of each property.
+     - `all_property_link`: List containing the link to each property.
+
+3. **Prepare for Submission**
+   - Set up the web form with the following fields:
+     - Address input field.
+     - Price input field.
+     - Property link input field.
+     - Submit button.
+     - Button to submit another response (if applicable).
+
+4. **Iterate Through Extracted Data:**
+   - Use the `zip()` function to iterate through `all_prices`, `all_address`, and `all_property_link` simultaneously.
+     - For each iteration:
+       1. Locate the input fields for address, price, and property link using CSS selectors.
+       2. Send the corresponding address, price, and link data to each input field.
+       3. Locate and click the submit button to send the form response.
+       4. Wait for 2 seconds for the form submission to process.
+       5. Locate and click the option to submit another response, if available.
+       6. Wait for another 2 seconds to reset the form for the next iteration.
+
+5. **End of Program:**
+   - The program will continue to submit responses for each property until all data from `all_prices`, `all_address`, and `all_property_link` has been processed and submitted.
 
 
 
