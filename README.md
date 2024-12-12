@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 28)
+# Python-Projects (TOTAL - 29)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -1026,6 +1026,52 @@ https://github.com/user-attachments/assets/ea99b5f8-8937-4c50-aecc-675a71ef78e2
    - The program will continue to submit responses for each property until all data from `all_prices`, `all_address`, and `all_property_link` has been processed and submitted.
 
 https://github.com/user-attachments/assets/870c211e-c504-4499-ae54-fb4dee248855
+
+## Project - 29: Movie Rating System Website!
+## Algorithm
+1. **Initialize Flask and Configure App**
+   - Import necessary libraries and initialize Flask.
+   - Set up `SECRET_KEY` and configure `SQLALCHEMY_DATABASE_URI`.
+
+2. **Set Up Database**
+   - Define `Base` using `DeclarativeBase`.
+   - Create a `MovieTable` model with columns for movie details like `title`, `year`, `description`, etc.
+   - Initialize and create the database.
+
+3. **Bootstrap and Forms**
+   - Integrate Flask-Bootstrap.
+   - Create forms (`my_form` and `add_movie_form`) using Flask-WTF to handle input for editing and adding movies.
+
+4. **Data Activation and Retrieval**
+   - Define helper functions to activate data (`activate_data`), retrieve data (`retrieve_data`), and arrange data by ranking (`arrange_data`).
+   - Use SQLAlchemy queries to manage database operations.
+
+5. **Home Route**
+   - Define `/` route to render `index.html` with sorted movies data.
+   - Call `arrange_data()` to sort movies by rating.
+
+6. **Edit Movie**
+   - Define `/edit` route to update movie ratings and reviews.
+   - Use FlaskForm for validation and commit changes to the database.
+
+7. **Delete Movie**
+   - Define `/delete` route to remove a movie entry from the database.
+   - Retrieve movie ID from request arguments, delete the movie, and commit changes.
+
+8. **Add Movie**
+   - Define `/add_movie` route to add a new movie.
+   - Validate form data, populate the `MovieTable` object, and commit the movie to the database.
+
+9. **Render Templates**
+   - Render appropriate HTML templates (`index.html`, `edit.html`, `add.html`) with data passed from routes.
+
+10. **Run Application**
+    - Use `if __name__ == '__main__':` to run the Flask app in debug mode.
+
+
+
+https://github.com/user-attachments/assets/010e6c87-f841-4987-a938-0ac32da5aaa6
+
 
 **More projects will be uploaded soon!**
 
