@@ -1070,7 +1070,9 @@ https://github.com/user-attachments/assets/870c211e-c504-4499-ae54-fb4dee248855
 
 
 
-https://github.com/user-attachments/assets/010e6c87-f841-4987-a938-0ac32da5aaa6
+https://github.com/user-attachments/assets/d1bba82d-1057-4c08-932a-7605a93e550b
+
+
 
 
 **More projects will be uploaded soon!**
