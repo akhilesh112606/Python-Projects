@@ -1072,8 +1072,44 @@ https://github.com/user-attachments/assets/870c211e-c504-4499-ae54-fb4dee248855
 
 https://github.com/user-attachments/assets/d1bba82d-1057-4c08-932a-7605a93e550b
 
+## Project - 30: Own API Creation
+## Algorithm
 
+1. **Setup Flask and SQLAlchemy**
+   - Import necessary libraries.
+   - Initialize Flask app and configure the database URI for SQLAlchemy.
 
+2. **Define the Database Model**
+   - Create a model class (e.g., `Cafe`) that represents the database table.
+   - Define the table schema with necessary columns and primary key.
+
+3. **Create the Flask Route**
+   - Define an endpoint using the `@app.route` decorator.
+   - Use a meaningful route, e.g., `/delete-cafe/<int:cafe_id>`.
+
+4. **Accept Dynamic Parameters**
+   - Use dynamic route parameters (e.g., `<int:cafe_id>`) to identify the row to delete.
+
+5. **Fetch the Row to Delete**
+   - Use `Model.query.get(cafe_id)` to fetch the row based on the primary key.
+   - Check if the row exists. If not, return an appropriate error message.
+
+6. **Mark the Row for Deletion**
+   - If the row exists, call `db.session.delete(object)` to mark it for deletion.
+
+7. **Commit the Changes**
+   - Use `db.session.commit()` to apply the deletion to the database.
+
+8. **Handle Errors Gracefully**
+   - If the row does not exist, return a 404 error with a meaningful message.
+   - Wrap database operations in a `try-except` block if necessary to handle unexpected errors.
+
+9. **Test the API**
+   - Use tools like Postman or cURL to test the DELETE endpoint.
+   - Verify that rows are deleted successfully from the database.
+
+10. **Document the API**
+    - Add clear documentation for the endpoint, including the URL, method, parameters, and responses, to the README file.
 
 **More projects will be uploaded soon!**
 
