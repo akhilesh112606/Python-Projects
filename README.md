@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 30)
+# Python-Projects (TOTAL - 31)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -1110,6 +1110,95 @@ https://github.com/user-attachments/assets/d1bba82d-1057-4c08-932a-7605a93e550b
 
 10. **Document the API**
     - Add clear documentation for the endpoint, including the URL, method, parameters, and responses, to the README file.
+
+## Project 31 - Blogging Website [BACKEND]
+## Algorithm
+## 1. Application Initialization
+- Import necessary libraries:
+  - Flask, SQLAlchemy, WTForms, CKEditor, and other dependencies.
+- Initialize Flask app:
+  - Set `SECRET_KEY`.
+  - Configure database URI (`sqlite:///posts.db`).
+  - Initialize Bootstrap5 and CKEditor for UI enhancements.
+
+## 2. Database Configuration
+- Define `Base` class for SQLAlchemy models.
+- Create `BlogPost` table with fields:
+  - `id`: Primary Key.
+  - `title`, `subtitle`, `date`, `body`, `author`, `img_url`: Various attributes.
+- Use `db.create_all()` to create tables if not already present.
+
+## 3. Form Configuration
+- Define `Blog_Post_Form` using WTForms:
+  - Fields: `title`, `subtitle`, `author_name`, `url`, `body`.
+  - Use `CKEditorField` for `body` to enable rich text editing.
+
+## 4. Routes and Functionalities
+
+### 4.1 Home Page
+- **Route**: `/`
+- **Method**: `GET`
+- **Functionality**:
+  - Fetch all blog posts from the database.
+  - Render `index.html` with a list of posts.
+
+### 4.2 View a Single Post
+- **Route**: `/post`
+- **Method**: `GET`
+- **Functionality**:
+  - Retrieve `post_id` from query parameters.
+  - Fetch the specific post using SQLAlchemy.
+  - Render `post.html` with the selected post's data.
+
+### 4.3 Create a New Post
+- **Route**: `/new_post`
+- **Methods**: `GET`, `POST`
+- **Functionality**:
+  - Render a form for new post creation.
+  - On form submission:
+    - Validate inputs.
+    - Save post data into the database.
+    - Redirect to the home page.
+
+### 4.4 Edit an Existing Post
+- **Route**: `/edit-post/<int:post_id>`
+- **Methods**: `GET`, `POST`
+- **Functionality**:
+  - Fetch the post using `post_id`.
+  - Prepopulate the form with the post's existing data.
+  - On form submission:
+    - Update the post in the database.
+    - Redirect to the post's detailed view.
+
+### 4.5 Delete a Post
+- **Route**: `/delete/<int:post_id>`
+- **Method**: `GET`
+- **Functionality**:
+  - Fetch the post using `post_id`.
+  - Delete the post from the database.
+  - Redirect to the home page.
+
+## 5. Additional Pages
+- **About Page**: `/about`
+  - Static page rendered from `about.html`.
+- **Contact Page**: `/contact`
+  - Static page rendered from `contact.html`.
+
+## 6. Application Execution
+- Run the application using `app.run(debug=True, port=5003)`.
+
+## 7. Enhancements
+- Add error handling for invalid `post_id`.
+- Improve form styling with Bootstrap classes.
+- Implement pagination for the home page if posts exceed a certain limit.
+
+## 8. Directory Structure
+
+
+
+https://github.com/user-attachments/assets/881a551b-fcb4-425f-956b-57c0b8e49982
+
+
 
 **More projects will be uploaded soon!**
 
