@@ -1,4 +1,4 @@
-# Python-Projects (TOTAL - 31)
+# Python-Projects (TOTAL - 32)
 
 ## Project - 1: Random Number Guessing Game
 
@@ -1198,7 +1198,74 @@ https://github.com/user-attachments/assets/d1bba82d-1057-4c08-932a-7605a93e550b
 
 https://github.com/user-attachments/assets/881a551b-fcb4-425f-956b-57c0b8e49982
 
+## Project 32 - User Authentication [BACKEND]
+## Algorithm
 
+### 1. **Application Setup**:
+   - Initialize the Flask app.
+   - Set the secret key for sessions.
+   - Configure the database URI (SQLite in this case).
+   - Initialize Flask-Login for managing user sessions.
+   - Define the database schema using SQLAlchemy and create the necessary table (`User` table).
+
+### 2. **User Model**:
+   - Define a `User` model with fields:
+     - `id`: Integer, primary key.
+     - `email`: String, unique field.
+     - `password`: String, stores hashed password.
+     - `name`: String, stores the user's name.
+
+### 3. **Database Creation**:
+   - Create the `users.db` database and the `User` table.
+
+### 4. **User Registration**:
+   - Route: `/register`
+   - Method: `POST` (handles form submission)
+   - Input: `name`, `email`, `password` (from user form)
+   - Process:
+     1. Hash the password using `generate_password_hash()`.
+     2. Check if the email already exists in the database.
+     3. If the user does not exist:
+        - Create a new `User` object.
+        - Save the new user in the database.
+        - Redirect to the `/secrets` route with the user's name.
+     4. If the user exists, show a flash message: "User already exists!".
+   - Route: `/register` also supports `GET` to display the registration form.
+
+### 5. **User Login**:
+   - Route: `/login`
+   - Method: `POST` (handles form submission)
+   - Input: `email`, `password` (from user form)
+   - Process:
+     1. Check if the email exists in the database.
+     2. If the email exists, compare the entered password with the stored hashed password using `check_password_hash()`.
+     3. If the password matches, redirect the user to the `/secrets` route.
+     4. If the email or password is incorrect, show a flash message: "Invalid Email or Password".
+   - Route: `/login` also supports `GET` to display the login form.
+
+### 6. **Secrets Route (Protected)**:
+   - Route: `/secrets/<name>`
+   - Input: `name` (from URL)
+   - Process:
+     1. Display the user's name and provide access to a protected page (only accessible if the user is logged in).
+     2. Use Flask-Login to ensure only logged-in users can access this route.
+
+### 7. **User Logout**:
+   - Route: `/logout`
+   - Method: `GET`
+   - Process: Log out the user (currently not implemented in this code).
+   - **Note**: Use `logout_user()` from Flask-Login to log out users when implemented.
+
+### 8. **Download Route**:
+   - Route: `/download`
+   - Method: `GET`
+   - Process:
+     1. Serve a file (`cheat_sheet.pdf`) from the `static/files` directory.
+     2. Ensure that the file is downloadable as an attachment.
+
+### 9. **Flash Messages**:
+   - Flash messages are used to display feedback to the user (e.g., success or error messages).
+   - Flash messages are rendered using `get_flashed_messages()` in the templates.
 
 **More projects will be uploaded soon!**
 
